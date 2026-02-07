@@ -1,4 +1,4 @@
-import { pool } from "../db/connection.js";
+import { pool } from "../../config/db/connection.js";
 
 async function test() {
   const res = await pool.query("SELECT NOW()");
