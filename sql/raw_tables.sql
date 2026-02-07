@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS raw.raw_books (
+    id SERIAL PRIMARY KEY,
+    source VARCHAR(50),
+    payload JSONB,
+    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
